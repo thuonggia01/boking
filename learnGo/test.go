@@ -29,5 +29,5 @@ func main() {
 	fmt.Println("Hello World"[1])
 	fmt.Println("Hello " + "World")
 	x := [6]string{"a", "b", "c", "d", "e", "f"}
-	fmt.Println(x[0:6])
+	fmt.Println(x)
 }
