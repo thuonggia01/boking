@@ -70,16 +70,23 @@ func main() {
 	trong phép dịch chuyển số học bên phải, bit thể hiện dấu được thêm vào bên trái, do đó dấu của số được giữ nguyên.
 	*/
 	var t, i uint
-	t, i = 1, 1
+	t, i = 2, 1
 
 	for i = 1; i < 10; i++ {
 		fmt.Printf("%d << %d = %d \n", t, i, t<<i)
+		var tBit byte = byte(t)
+		var t2 byte = byte(t << i)
+		fmt.Printf("%b << %d = %b \n", tBit, i, t2)
 	}
 
 	fmt.Println()
 
-	t = 512
+	t = 50
 	for i = 1; i < 10; i++ {
 		fmt.Printf("%d >> %d = %d \n", t, i, t>>i)
+		var tBit byte = byte(t)
+		var t2 byte = byte(t >> i)
+		fmt.Printf("%b >> %d = %b \n", tBit, i, t2)
 	}
+
 }
